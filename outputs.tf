@@ -14,18 +14,6 @@
  * limitations under the License.
  */
 
-variable "name" {
-  type = string
-}
-
-variable "resource_group_name" {
-  type = string
-}
-
-variable "location" {
-  type = string
-}
-
-variable "alert_email" {
-  type = string
+output "log_analytics_workspace_id" {
+  value = azurerm_log_analytics_workspace.logging.id
 }

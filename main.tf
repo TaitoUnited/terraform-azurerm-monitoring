@@ -14,5 +14,9 @@
  * limitations under the License.
  */
 
+provider "azurerm" {
+  features {}
+}
+
 locals {
 }
