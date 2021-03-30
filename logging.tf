@@ -15,7 +15,7 @@
  */
 
 resource "azurerm_log_analytics_workspace" "logging" {
-  name                = var.name
+  name                = "${var.name}-logs"
   location            = var.location
   resource_group_name = var.resource_group_name
   sku                 = "PerGB2018"
